@@ -1,26 +1,26 @@
-<nav class="navbar navbar-expand-lg" style="background-color: rgb(189, 165, 243)">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(69, 68, 71)">
     <div class="container justify-content-center">
       <a class="navbar-brand" href="{% url 'home' %}">SynchroLink</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent" style="margin-left: 200px;">
         <ul class="navbar-nav ms-auto nav-underline">
 
           {% if user.is_authenticated %}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'add_record' %}">Add Record</a>
+            <a class="nav-link" href="{% url 'add_record' %}" style="font-weight: 700;">Add Record</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+            <a class="nav-link" href="{% url 'logout' %}" style="font-weight: 700;">Logout</a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'register' %}">Register</a>
+            <a class="nav-link" href="{% url 'register' %}" style="font-weight: 700;">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}">Login</a>
+            <a class="nav-link" href="{% url 'home' %}" style="font-weight: 700;">Login</a>
           </li>
           {% endif %}
         </ul>

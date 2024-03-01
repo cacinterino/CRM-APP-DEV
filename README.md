@@ -1,5 +1,5 @@
 # SynchroLink
-##SynchroLink can store your data such as:
+## SynchroLink can store your data such as:
 - Name
 - Email
 - Phone
